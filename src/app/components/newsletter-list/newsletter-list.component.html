@@ -1,0 +1,28 @@
+<h5>
+  <u><i>Demo navbar !!</i></u>
+</h5>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <p>I am navbar !!</p>
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <!-- <button type="button" mat-button color="primary" (click)="drawer.toggle()">
+      click me!!
+    </button> -->
+    <!-- Button to clear selection -->
+    <button (click)="clearSelection()">Clear Selection</button>
+    <!-- AG Grid Angular Component -->
+    <ag-grid-angular
+      style="width: 100%; height: 400px"
+      class="ag-theme-alpine"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [rowData]="rowData"
+      [rowSelection]="'multiple'"
+      [animateRows]="true"
+      (cellClicked)="onCellClicked($event)"
+    ></ag-grid-angular>
+
+    hello world
+  </div>
+</mat-drawer-container>

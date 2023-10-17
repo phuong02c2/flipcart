@@ -1,0 +1,28 @@
+@import url("https://unpkg.com/ag-grid-community@30.2.0/styles/ag-grid.css");
+@import url("https://unpkg.com/ag-grid-community@30.2.0/styles/ag-theme-alpine.css");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.example-container {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(155, 184, 26);
+}
+
+.example-sidenav {
+  background: rgb(125, 125, 125);
+}
+
+.example-sidenav-content {
+  background: rgb(255, 255, 200);
+}
